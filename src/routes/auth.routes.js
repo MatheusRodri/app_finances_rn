@@ -13,8 +13,15 @@ function AuthRoutes(){
     headerShown:false
     }}
     />
-    <AuthStack.Screen name={"SignUp"} component={SignUp} ptions={{
-      headerShown:false
+    <AuthStack.Screen name={"SignUp"} component={SignUp} options={{
+      headerStyle:{
+        backgroundColor:'#3b3dbf',
+        borderBottomWidth:1,
+        borderBottomColor:'#00b94a'
+      },
+      headerTintColor:'#fff',
+      headerTitle:'Back',
+      headerBackTitleVisible:false,
     }}/>
   </AuthStack.Navigator>
   )
